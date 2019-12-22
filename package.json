@@ -1,0 +1,15 @@
+{
+  "name": "jc_portfolio_2019",
+  "version": "1.0.0",
+  "description": "Programming and Web Dev Portfolio Website for Jonathan Charter",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Jonathan Charter",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.0",
+    "npm": "^6.13.4"
+  }
+}
