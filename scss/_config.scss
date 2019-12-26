@@ -1,0 +1,28 @@
+$primary-colour: #444;
+$secondary-colour: #ee7722;
+$background-image:url(../img/coffee-notebook.jpg);
+$background-opacity: 0.8;
+$show-home-image: true;
+
+@mixin easing {
+    transition: all 0.5s ease;
+}
+
+@mixin background {
+    @if $show-home-image {
+        background: $background-image;
+        background-attachment: fixed;
+        background-size: cover;
+
+        &:after {
+            content:'';
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($primary-colour, $background-opacity);
+        }
+    }
+}
