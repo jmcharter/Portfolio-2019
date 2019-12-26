@@ -1,4 +1,5 @@
 //Get DOM Elements
+const menu_text = document.querySelector('.menu-text')
 const menu_btn = document.querySelector('.menu-btn');
 const btn_line = document.querySelectorAll('.btn-line');
 const menu = document.querySelector('.menu')
@@ -13,6 +14,7 @@ let show_menu = false;
 
 let toggle_menu = function () {
     if (!show_menu) {
+        menu_text.classList.add('close');
         menu_btn.classList.add('close')
         menu.classList.add('show')
         menu_nav.classList.add('show')
@@ -21,6 +23,7 @@ let toggle_menu = function () {
 
         show_menu = true;
     } else {
+        menu_text.classList.remove('close')
         menu_btn.classList.remove('close')
         menu.classList.remove('show')
         menu_nav.classList.remove('show')
