@@ -73,6 +73,25 @@
     transform: translate3d(0, 100%, 0); }
     .menu .brand.show {
       transform: translate3d(0, 0, 0); }
+    .menu .brand .photo {
+      width: 250px;
+      height: 250px;
+      background: white;
+      border: 3px solid #ee7722;
+      border-radius: 50%;
+      background-image: url("../img/portrait.jpg");
+      background-position: -40px 0px; }
+  .menu .nav-item.current > a {
+    color: #ee7722; }
+  .menu .nav-link {
+    display: inline-block;
+    position: relative;
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-variant: small-caps;
+    transition: all 0.5s ease; }
+    .menu .nav-link:hover {
+      color: #ee7722; }
 
 * {
   box-sizing: border-box; }
