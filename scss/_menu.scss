@@ -33,7 +33,7 @@
     .btn-line {
         width: 24px;
         height: 4px;
-        background: $link-colour;
+        background: set-text-colour($primary-colour);
         margin: 0 0 6px 0;
         @include easing;
     }
@@ -66,7 +66,6 @@
     position: absolute;
     width: 100%;
     visibility: hidden;
-    opacity: 0.9;
 
     &.show {
         visibility: visible;
@@ -87,7 +86,7 @@
     &-nav {
         margin: 0;
         padding: 0;
-        background: darken($color: $primary-colour, $amount: 10);
+        background: darken($color: rgba($primary-colour,0.9), $amount: 10);
         list-style: none;
         transform: translate3d(100%, 0, 0);
 
@@ -98,8 +97,8 @@
     .brand {
         margin: 0;
         padding: 0;
-        background: darken($color: $primary-colour, $amount: 20);
-        transform: translate3d(0, 100%, 0);
+        background: darken($color: rgba($primary-colour, 0.9), $amount: 20);
+        transform: translate3d(-100%, 0, 0);
 
         &.show{
             transform: translate3d(0, 0 ,0);

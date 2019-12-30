@@ -16,7 +16,7 @@ body {
     @include background;
     height: 100%;
     background-color: $primary-colour;
-    color: $heading-colour;
+    color: set-text-colour($primary-colour);
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
     line-height: 1.5;
@@ -25,7 +25,7 @@ body {
 
 h1, h2, h3 {
     margin: 0;
-    color: $heading-colour;
+    // color: $heading-colour;
     font-weight: 400;
 
     &.main-heading {
@@ -43,7 +43,7 @@ h1, h2, h3 {
 }
 
 a {
-    color: $link-colour;
+    color: set-text-colour($primary-colour);
     text-decoration: none;
 }
 
@@ -76,3 +76,4 @@ main{
         }
     }
 }
+@import 'mobile';
