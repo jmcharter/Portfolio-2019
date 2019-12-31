@@ -66,8 +66,8 @@ h1, h2, h3 {
         font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 600;
         font-size: 5rem;
-        text-shadow: 0 2px 10px rgba($color: #000000, $alpha: 0.7),
-                     0 5px 50px rgba($color: #ffffff, $alpha: 0.8);
+        text-shadow: 0 2px 10px set-shadow-colour-one($primary-colour),
+                     0 5px 50px set-shadow-colour-two($primary-colour);
     }
 
     #highlight {

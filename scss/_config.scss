@@ -1,4 +1,5 @@
 $primary-colour: #444;
+$primary-colour: #ddd;
 $secondary-colour: #ee7722;
 $background-image:url(../img/coffee-notebook.jpg);
 $background-opacity: 0.85;
@@ -33,12 +34,12 @@ $show-home-image: true;
 @mixin background {
     @if $show-home-image {
         background: $background-image no-repeat top right;
-        background-attachment: fixed;
+        background-attachment: absolute;
         background-size: cover;
 
         &:after {
             content:'';
-            position: fixed;
+            position: absolute;
             z-index: -1;
             top: 0;
             right: 0;
@@ -53,6 +54,22 @@ $show-home-image: true;
     @if (lightness($colour) > 40) {
         @return #0f0f0f;
     } @else {
-        @return #eeffee;
+        @return #444;
+    }
+}
+
+@function set-shadow-colour-one($colour){
+    @if (lightness($colour) > 40) {
+        @return rgba($color: #aaa, $alpha: 0.8);
+    } @else {
+        @return rgba($color: #000000, $alpha: 0.7);
+    }
+}
+
+@function set-shadow-colour-two($colour){
+    @if (lightness($colour) > 40) {
+        @return rgba($color: #000000, $alpha: 0.8);
+    } @else {
+        @return rgba($color: #ffffff, $alpha: 0.7);
     }
 }
