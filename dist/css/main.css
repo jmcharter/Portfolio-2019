@@ -182,9 +182,7 @@ a {
   .menu .brand .photo {
     width: 150px;
     height: 150px;
-    background-size: 140%; }
-  main#home h1 {
-    margin-top: 10vh; } }
+    background-size: 140%; } }
 
 @media screen and (max-width: 500px) {
   html, body {
@@ -192,6 +190,6 @@ a {
   html, body {
     height: calc(var(--vh, 1vh) * 100); }
   main#home h1 {
-    margin-top: 10vh; }
+    margin-top: 5vh; }
   main .main-heading {
     font-size: 3rem; } }
