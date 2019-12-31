@@ -38,12 +38,12 @@ $show-home-image: true;
 
         &:after {
             content:'';
-            position: absolute;
+            position: fixed;
             z-index: -1;
             top: 0;
             right: 0;
             width: 100%;
-            height: 100%;
+            height: 100vh;
             background: rgba($primary-colour, $background-opacity);
         }
     }
@@ -56,5 +56,3 @@ $show-home-image: true;
         @return #eeffee;
     }
 }
-
-$link-colour: set-text-colour($primary-colour);

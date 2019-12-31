@@ -101,9 +101,6 @@ header {
   width: 100%; }
 
 body {
-  background: url(../img/coffee-notebook.jpg) no-repeat top right;
-  background-attachment: fixed;
-  background-size: cover;
   height: 100%;
   background-color: #444;
   color: #eeffee;
@@ -111,19 +108,39 @@ body {
   font-weight: 300;
   line-height: 1.5;
   margin: 0; }
-  body:after {
+
+main {
+  background: url(../img/coffee-notebook.jpg) no-repeat top right;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #444;
+  height: 100vh;
+  padding: 4rem;
+  position: relative;
+  z-index: -1; }
+  main:after {
     content: '';
-    position: absolute;
+    position: fixed;
     z-index: -1;
     top: 0;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: rgba(68, 68, 68, 0.85); }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.5rem; }
+      main .icons a:hover, main .icons a:focus {
+        color: #ee7722;
+        transition: all 0.5s ease; }
+  main#home h1 {
+    margin-top: 20vh; }
 
 h1, h2, h3 {
   margin: 0;
-  font-weight: 400; }
+  font-weight: 400;
+  z-index: 2; }
   h1.main-heading, h2.main-heading, h3.main-heading {
     font-variant: small-caps;
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -137,18 +154,10 @@ a {
   color: #eeffee;
   text-decoration: none; }
 
-main {
-  height: 100%;
-  padding: 4rem; }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.5rem; }
-      main .icons a:hover, main .icons a:focus {
-        color: #ee7722;
-        transition: all 0.5s ease; }
-  main#home h1 {
-    margin-top: 20vh; }
+#projects, #about, #contact {
+  height: 100vh;
+  width: 100%;
+  transition: all 0.5s ease; }
 
 @media screen and (max-width: 768px) {
   main {
