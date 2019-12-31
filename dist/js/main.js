@@ -1,3 +1,8 @@
+window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
 //Get Link DOM Elements
 const home_link = document.querySelector('#home-link');
 const projects_link = document.querySelector('#projects-link');
