@@ -100,7 +100,7 @@ a {
     // display: none;
 }
 .about {
-    background-color: darken($color: $primary-colour, $amount: 20);
+    background-color: darken($color: $primary-colour, $amount: 2);
 
     .about-info {
         margin-top: 5vh;
@@ -130,6 +130,11 @@ a {
     }
 
     .card {
+
+        background: lighten($color: $primary-colour, $amount: 2);
+        padding: 1rem;
+        border-top: $secondary-colour 5px solid;
+        border-bottom: $secondary-colour 2px solid;
 
         &-1{
             grid-area: card1;

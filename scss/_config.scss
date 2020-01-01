@@ -1,5 +1,5 @@
 $primary-colour: #444;
-$primary-colour: #ddd;
+// $primary-colour: #ddd;
 $secondary-colour: #ee7722;
 $background-image:url(../img/coffee-notebook.jpg);
 $background-opacity: 0.85;
@@ -54,7 +54,7 @@ $show-home-image: true;
     @if (lightness($colour) > 40) {
         @return #0f0f0f;
     } @else {
-        @return #444;
+        @return #eeffee;
     }
 }
 
