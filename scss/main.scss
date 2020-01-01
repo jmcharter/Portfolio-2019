@@ -88,7 +88,7 @@ a {
 }
 
 .projects, .about, .contact {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     padding: 4rem;
     @include easing;
@@ -130,6 +130,7 @@ a {
     }
 
     .card {
+
         &-1{
             grid-area: card1;
         }
