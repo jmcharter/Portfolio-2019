@@ -116,7 +116,7 @@
         }
     }    
     .nav-item {
-        &.current > a {
+        .current {
             color: $secondary-colour;
         }
     }

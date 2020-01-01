@@ -1,10 +1,82 @@
 // Wide Screen
 @include media_xl {
 
+    .navigation .menu-btn, .menu-text {
+        display: none;
+    }
+
+    .menu {
+        visibility: visible;
+        position: unset;
+
+        &-nav {
+            display: block;
+            flex-flow: unset;
+            align-items: unset;
+            justify-content: unset;
+            float: unset;
+            width: 100%;
+            height: 5vh;
+        }
+        .brand {
+            display: none;
+        }
+        .nav-link {
+            display: unset;
+            font-size: 1.5rem;
+            padding: 0;
+        }
+    }
+
+    .menu-nav{
+        transform: translate3d(0, 0, 0);
+
+        .nav-item{
+            padding-left: 3rem;
+            display: inline;
+        }
+    }
+
 }
 
 //Desktops and Laptops
 @include media_lg {
+
+    .navigation .menu-btn, .menu-text {
+        display: none;
+    }
+
+    .menu {
+        visibility: visible;
+        position: unset;
+
+        &-nav {
+            display: block;
+            flex-flow: unset;
+            align-items: unset;
+            justify-content: unset;
+            float: unset;
+            width: 100%;
+            height: 5vh;
+        }
+        .brand {
+            display: none;
+        }
+        .nav-link {
+            display: unset;
+            font-size: 1.5rem;
+            padding: 0;
+        }
+    }
+
+    .menu-nav{
+        transform: translate3d(0, 0, 0);
+
+        .nav-item{
+            padding-left: 3rem;
+            display: inline;
+        }
+    }
 
 }
 
@@ -38,7 +110,7 @@
         transform: translate3d(-100%,0,0);
     }
 
-    .menu .brand .photo {
+    .menu .brand .photo, .about .bio-pic {
         width: 150px;
         height: 150px;
         background-size: 140%;
@@ -47,7 +119,7 @@
 
 // Smartphones
 @include media_sm {
-    main#home h1 {
+    main .home h1 {
         margin-top: 5vh;
     }
 

@@ -6,7 +6,22 @@ function initialize_menu() {
     const menu = document.querySelector('.menu');
     const menu_nav = document.querySelector('.menu-nav');
     const brand = document.querySelector('.brand');
-    const nav_items = document.querySelectorAll('.nav-item')
+    const nav_items = document.querySelectorAll('.nav-item');
+
+    //Get Link DOM Elements
+    const home_link = document.querySelector('#home-link');
+    const projects_link = document.querySelector('#projects-link');
+    const about_link = document.querySelector('#about-link');
+    const contact_link = document.querySelector('#contact-link');
+
+    //Get targets for links
+    const home_target = document.querySelector('.home');
+    const projects_target = document.querySelector('.projects');
+    const about_target = document.querySelector('.about');
+    const contact_target = document.querySelector('.contact');
+
+    nav_links = [home_link, projects_link, about_link, contact_link];
+    link_targets = [home_target, projects_target, about_target, contact_target];
 
     //Initialize menu
     let show_menu = false;
@@ -34,20 +49,6 @@ function initialize_menu() {
     }
 
     function add_scrolling_to_nav_links() {
-        //Get Link DOM Elements
-        const home_link = document.querySelector('#home-link');
-        const projects_link = document.querySelector('#projects-link');
-        const about_link = document.querySelector('#about-link');
-        const contact_link = document.querySelector('#contact-link');
-
-        //Get targets for links
-        const home_target = document.querySelector('#home');
-        const projects_target = document.querySelector('#projects');
-        const about_target = document.querySelector('#about');
-        const contact_target = document.querySelector('#contact');
-
-        nav_links = [home_link, projects_link, about_link, contact_link];
-        link_targets = [home_target, projects_target, about_target, contact_target];
 
         for (let i = 0; i < nav_links.length; i++) {
             let link = nav_links[i];
@@ -60,9 +61,31 @@ function initialize_menu() {
 
     };
 
+    function change_active_on_scroll() {
+
+        let mainNavLinks = document.querySelectorAll(".nav-item a");
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach(link => {
+            let section = document.querySelector(link.hash);
+
+            if (
+                section.offsetTop - 50 <= fromTop &&
+                section.offsetTop + section.offsetHeight > fromTop
+            ) {
+                link.classList.add("current");
+            } else {
+                link.classList.remove("current");
+            }
+        });
+
+    };
+
     menu_btn.addEventListener('click', toggle_menu);
     add_scrolling_to_nav_links();
-}
+    change_active_on_scroll()
+    window.addEventListener('scroll', change_active_on_scroll)
+};
 
 
 initialize_menu();
