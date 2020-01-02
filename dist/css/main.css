@@ -159,6 +159,9 @@ a {
   color: #eeffee;
   text-decoration: none; }
 
+.sub-header {
+  color: #ee7722; }
+
 .projects, .about, .contact {
   min-height: 100vh;
   width: 100%;
@@ -216,7 +219,8 @@ a {
       justify-content: unset;
       float: unset;
       width: 100%;
-      height: 5vh; }
+      height: 5vh;
+      min-height: 2rem; }
     .menu .brand {
       display: none; }
     .menu .nav-link {
@@ -224,10 +228,14 @@ a {
       font-size: 1.5rem;
       padding: 0; }
   .menu-nav {
-    transform: translate3d(0, 0, 0); }
+    transform: translate3d(0, 0, 0);
+    display: flex;
+    align-items: center; }
     .menu-nav .nav-item {
       padding-left: 3rem;
-      display: inline; } }
+      display: inline; }
+  .about .about-info {
+    margin: 15vh; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .navigation .menu-btn, .menu-text {
@@ -242,7 +250,8 @@ a {
       justify-content: unset;
       float: unset;
       width: 100%;
-      height: 5vh; }
+      height: 5vh;
+      min-height: 2rem; }
     .menu .brand {
       display: none; }
     .menu .nav-link {
@@ -250,10 +259,14 @@ a {
       font-size: 1.5rem;
       padding: 0; }
   .menu-nav {
-    transform: translate3d(0, 0, 0); }
+    transform: translate3d(0, 0, 0);
+    display: flex;
+    align-items: center; }
     .menu-nav .nav-item {
       padding-left: 3rem;
-      display: inline; } }
+      display: inline; }
+  .about .about-info {
+    margin: 15vh; } }
 
 @media screen and (max-width: 768px) {
   main {
