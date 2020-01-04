@@ -70,8 +70,8 @@ function initialize_menu() {
             let section = document.querySelector(link.hash);
 
             if (
-                section.offsetTop - 50 <= fromTop &&
-                section.offsetTop + section.offsetHeight > fromTop
+                section.offsetTop - 100 <= fromTop &&
+                section.offsetTop - 100 + section.offsetHeight > fromTop
             ) {
                 link.classList.add("current");
             } else {
