@@ -1,6 +1,10 @@
 // Wide Screen
 @include media_xl {
 
+    main{
+        padding: 4rem 10rem;
+    }
+
     .navigation .menu-btn, .menu-text {
         display: none;
     }
@@ -47,11 +51,18 @@
         }
     }
 
+    .section {
+        padding: 4rem 10rem;
+    }
 }
 
 //Desktops and Laptops
 @include media_lg {
 
+    main{
+        padding: 4rem 10rem;
+    }
+
     .navigation .menu-btn, .menu-text {
         display: none;
     }
@@ -98,6 +109,9 @@
         }
     }
 
+    .section {
+        padding: 4rem 10rem;
+    }
 }
 
 //Tablets
