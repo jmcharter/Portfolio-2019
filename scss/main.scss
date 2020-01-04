@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,600|Roboto:300,700&display=swap');
 @import 'config';
 @import 'menu';
+@import 'gallery';
 
 * {
     box-sizing: border-box;
@@ -98,10 +99,10 @@ a {
     padding: 4rem;
 }
 
-//TEMP
 .projects {
     background-color: $primary-colour;
 }
+
 .about {
     background-color: darken($color: $primary-colour, $amount: 2);
 

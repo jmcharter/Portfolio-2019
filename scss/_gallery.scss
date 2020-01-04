@@ -1,0 +1,27 @@
+.gallery {
+    margin-top: 5vh;
+    position: relative;
+    background-color: darken($color: $primary-colour, $amount: 5);
+    min-width: 90%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    padding: 1rem;
+    border-radius: 0 10% 10% 0;
+    @include easing;
+
+    &-next{
+        right: 0;
+    }
+
+    &:hover{
+        color: $secondary-colour;
+        background: rgba(darken($primary-colour, 10), $alpha: 0.5);
+    }
+}
