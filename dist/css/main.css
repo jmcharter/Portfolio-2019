@@ -162,11 +162,10 @@ a {
 .sub-header {
   color: #ee7722; }
 
-.projects, .about, .contact {
+.section {
   min-height: 100vh;
   width: 100%;
-  padding: 4rem;
-  transition: all 0.5s ease; }
+  padding: 4rem; }
 
 .projects {
   background-color: #444; }
@@ -207,6 +206,8 @@ a {
   background-color: #444; }
 
 @media screen and (min-width: 1171px) {
+  main {
+    padding: 4rem 10rem; }
   .navigation .menu-btn, .menu-text {
     display: none; }
   .menu {
@@ -235,9 +236,13 @@ a {
       padding-left: 3rem;
       display: inline; }
   .about .about-info {
-    margin: 15vh; } }
+    margin: 15vh; }
+  .section {
+    padding: 4rem 10rem; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
+  main {
+    padding: 4rem 10rem; }
   .navigation .menu-btn, .menu-text {
     display: none; }
   .menu {
@@ -266,7 +271,9 @@ a {
       padding-left: 3rem;
       display: inline; }
   .about .about-info {
-    margin: 15vh; } }
+    margin: 15vh; }
+  .section {
+    padding: 4rem 10rem; } }
 
 @media screen and (max-width: 768px) {
   main {
