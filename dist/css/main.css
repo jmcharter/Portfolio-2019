@@ -320,7 +320,7 @@ a {
     height: 150px;
     background-size: 140%; }
   .about .about-info {
-    padding: 4rem;
+    padding: 2rem;
     grid-template-areas: "bio-pic"  "bio"  "card1"  "card2"  "card3";
     grid-template-columns: 1fr; }
   .section {
