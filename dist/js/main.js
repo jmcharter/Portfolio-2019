@@ -1,67 +1,67 @@
-function initialize_menu() {
+function initializeMenu() {
     //Get Nav DOM Elements
-    const menu_text = document.querySelector('.menu-text')
-    const menu_btn = document.querySelector('.menu-btn');
-    const btn_line = document.querySelectorAll('.btn-line');
+    const menuText = document.querySelector('.menu-text')
+    const menuBtn = document.querySelector('.menu-btn');
+    const btnLine = document.querySelectorAll('.btn-line');
     const menu = document.querySelector('.menu');
-    const menu_nav = document.querySelector('.menu-nav');
+    const menuNav = document.querySelector('.menu-nav');
     const brand = document.querySelector('.brand');
-    const nav_items = document.querySelectorAll('.nav-item');
+    const navItems = document.querySelectorAll('.nav-item');
 
     //Get Link DOM Elements
-    const home_link = document.querySelector('#home-link');
-    const projects_link = document.querySelector('#projects-link');
-    const about_link = document.querySelector('#about-link');
-    const contact_link = document.querySelector('#contact-link');
+    const homeLink = document.querySelector('#home-link');
+    const projectsLink = document.querySelector('#projects-link');
+    const aboutLink = document.querySelector('#about-link');
+    const contactLink = document.querySelector('#contact-link');
 
     //Get targets for links
-    const home_target = document.querySelector('.home');
-    const projects_target = document.querySelector('.projects');
-    const about_target = document.querySelector('.about');
-    const contact_target = document.querySelector('.contact');
+    const homeTarget = document.querySelector('.home');
+    const projectsTarget = document.querySelector('.projects');
+    const aboutTarget = document.querySelector('.about');
+    const contactTarget = document.querySelector('.contact');
 
-    nav_links = [home_link, projects_link, about_link, contact_link];
-    link_targets = [home_target, projects_target, about_target, contact_target];
+    navLinks = [homeLink, projectsLink, aboutLink, contactLink];
+    linkTargets = [homeTarget, projectsTarget, aboutTarget, contactTarget];
 
     //Initialize menu
-    let show_menu = false;
+    let showMenu = false;
 
-    function toggle_menu() {
-        if (!show_menu) {
-            menu_text.classList.add('close');
-            menu_btn.classList.add('close')
+    function toggleMenu() {
+        if (!showMenu) {
+            menuText.classList.add('close');
+            menuBtn.classList.add('close')
             menu.classList.add('show')
-            menu_nav.classList.add('show')
+            menuNav.classList.add('show')
             brand.classList.add('show')
-            nav_items.forEach(item => item.classList.add('show'));
+            navItems.forEach(item => item.classList.add('show'));
 
-            show_menu = true;
+            showMenu = true;
         } else {
-            menu_text.classList.remove('close')
-            menu_btn.classList.remove('close')
+            menuText.classList.remove('close')
+            menuBtn.classList.remove('close')
             menu.classList.remove('show')
-            menu_nav.classList.remove('show')
+            menuNav.classList.remove('show')
             brand.classList.remove('show')
-            nav_items.forEach(item => item.classList.add('show'));
+            navItems.forEach(item => item.classList.add('show'));
 
-            show_menu = false;
+            showMenu = false;
         }
     }
 
-    function add_scrolling_to_nav_links() {
+    function addScrollingToNavLinks() {
 
-        for (let i = 0; i < nav_links.length; i++) {
-            let link = nav_links[i];
+        for (let i = 0; i < navLinks.length; i++) {
+            let link = navLinks[i];
             link.addEventListener('click', (event) => {
                 event.preventDefault();
-                toggle_menu();
-                link_targets[i].scrollIntoView({ behavior: 'smooth' });
+                toggleMenu();
+                linkTargets[i].scrollIntoView({ behavior: 'smooth' });
             });
         }
 
     };
 
-    function change_active_on_scroll() {
+    function changeActiveOnScroll() {
 
         let mainNavLinks = document.querySelectorAll(".nav-item a");
         let fromTop = window.scrollY;
@@ -81,11 +81,11 @@ function initialize_menu() {
 
     };
 
-    menu_btn.addEventListener('click', toggle_menu);
-    add_scrolling_to_nav_links();
-    change_active_on_scroll()
-    window.addEventListener('scroll', change_active_on_scroll)
+    menuBtn.addEventListener('click', toggleMenu);
+    addScrollingToNavLinks();
+    changeActiveOnScroll()
+    window.addEventListener('scroll', changeActiveOnScroll)
 };
 
 
-initialize_menu();
+initializeMenu();
