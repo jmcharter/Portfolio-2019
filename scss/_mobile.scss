@@ -110,7 +110,7 @@
     }
 
     .section {
-        padding: 4rem 10rem;
+        padding: 2rem 2rem;
     }
 }
 
@@ -151,6 +151,9 @@
     }
 
     .about .about-info{
+
+            padding: 4rem;
+
             grid-template-areas: 
                 "bio-pic" 
                 "bio" 
@@ -160,6 +163,11 @@
 
             grid-template-columns: 1fr;
     }
+
+    .section {
+        padding: 1rem;
+    }
+    
 }
 
 // Smartphones
@@ -185,6 +193,10 @@
 
             grid-template-columns: 1fr;
         }
+    }
+
+    .section {
+        padding: 1rem;
     }
     
 }

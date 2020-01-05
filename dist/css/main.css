@@ -295,7 +295,7 @@ a {
   .about .about-info {
     margin: 15vh; }
   .section {
-    padding: 4rem 10rem; } }
+    padding: 2rem 2rem; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -320,8 +320,11 @@ a {
     height: 150px;
     background-size: 140%; }
   .about .about-info {
+    padding: 4rem;
     grid-template-areas: "bio-pic"  "bio"  "card1"  "card2"  "card3";
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .section {
+    padding: 1rem; } }
 
 @media screen and (max-width: 500px) {
   main .home h1 {
@@ -330,4 +333,6 @@ a {
     font-size: 3rem; }
   .about .about-info {
     grid-template-areas: "bio-pic"  "bio"  "card1"  "card2"  "card3";
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .section {
+    padding: 1rem; } }
