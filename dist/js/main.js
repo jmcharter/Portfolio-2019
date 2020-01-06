@@ -24,6 +24,8 @@ function initializeMenu() {
     linkTargets = [homeTarget, projectsTarget, aboutTarget, contactTarget];
 
     //Initialize menu
+
+    //Menu is hidden by default, shown on click of hamburger menu by adding .show class
     let showMenu = false;
 
     function toggleMenu() {
@@ -48,28 +50,34 @@ function initializeMenu() {
         }
     }
 
+    //Function to animate a smooth scroll down to the relevant section
+    //when link is clicked.
     function addScrollingToNavLinks() {
 
         for (let i = 0; i < navLinks.length; i++) {
             let link = navLinks[i];
             link.addEventListener('click', (event) => {
                 event.preventDefault();
-                toggleMenu();
+                toggleMenu(); //Close menu when link is clicked.
                 linkTargets[i].scrollIntoView({ behavior: 'smooth' });
             });
         }
 
     };
 
+    // Change the active class to highlight relevant link, when scrolling into
+    // it's respective section.
     function changeActiveOnScroll() {
 
         let mainNavLinks = document.querySelectorAll(".nav-item a");
-        let fromTop = window.scrollY;
+        let fromTop = window.scrollY; //Set to current scroll distance from top of screen.
 
         mainNavLinks.forEach(link => {
+            //Takes the section id from the link reference.
             let section = document.querySelector(link.hash);
 
             if (
+                // -100 added here so that it switches links ahead of reaching the section.
                 section.offsetTop - 100 <= fromTop &&
                 section.offsetTop - 100 + section.offsetHeight > fromTop
             ) {
