@@ -12,10 +12,10 @@
     position: absolute;
     padding: 1rem;
     border-radius: 0 10% 10% 0;
-    @include easing;
     height: 100%;
     display: flex;
     align-items: center;
+    @include easing;
 
     &-next{
         right: 0;
