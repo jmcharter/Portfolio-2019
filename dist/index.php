@@ -1,4 +1,4 @@
-<?php $title = '1914'; include("head.php");?>
+<?php $title = 'Jonathan Charter'; include("head.php");?>
 <main class="home section" id="home">
     <h1 class="main-heading">Jonathan <span id="highlight">Charter</span></h1>
     <h2 class="sub-heading">Web Development, Programming and Design</h2>
@@ -22,12 +22,16 @@
 </main>
 <div class="projects section" id="projects">
     <h1 class="section-heading">Projects</h1>
-    <div class="gallery">
-        <div class="button button-prev">
-            <i class="fas fa-arrow-alt-circle-left"></i>
+    <div class="showcase">
+        <div class="show-row">
+            <div class="show-col"></div>
+            <div class="show-col"></div>
+            <div class="show-col"></div>
         </div>
-        <div class="button button-next">
-            <i class="fas fa-arrow-alt-circle-right"></i>
+        <div class="show-row">
+            <div class="show-col"></div>
+            <div class="show-col"></div>
+            <div class="show-col"></div>
         </div>
     </div>
 
@@ -61,8 +65,4 @@
 <div class="contact section" id="contact">
     <h1 class="section-heading">Contact me</h1>
 </div>
-
-<script src="js/main.js"></script>
-</body>
-
-</html>
+<?php include("footer.php");?>
