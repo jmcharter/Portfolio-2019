@@ -40,7 +40,6 @@ layout: default
                 <!-- <div class="show-col"></div> -->
             </div>
         </div>
-
     </div>
     <div class="about section" id="about">
         <h1 class="section-heading">About me</h1>
