@@ -1,0 +1,3 @@
+name  : Jonathan Charter Web Development
+source : ./dist
+destination : ./dist/_site

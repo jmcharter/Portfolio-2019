@@ -1,13 +1,19 @@
+.showcase {
+    width: 100%;
+    margin: auto;
+}
+
 .show-row {
     display: flex;
     flex-flow: row wrap;
 }
 
 .show-col {
+    display: flex;
     flex-basis: 100%;
-    width: 100px;
+
     height: 100px;
-    background: deeppink;
-    padding: 1rem;
+    // padding: 1rem;
     border: 1px solid black;
+    min-height: 300px;
 }
