@@ -2,9 +2,6 @@
 title: My page
 layout: default
 ---
-
-# {{ page.title }}
-
 <main class="home section" id="home">
         <h1 class="main-heading">Jonathan <span id="highlight">Charter</span></h1>
         <h2 class="sub-heading">Web Development, Programming and Design</h2>
