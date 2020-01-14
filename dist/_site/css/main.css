@@ -94,7 +94,8 @@
 
 .showcase {
   width: 100%;
-  margin: auto; }
+  margin: auto;
+  padding-top: 4vh; }
 
 .show-row {
   display: flex;
@@ -259,8 +260,9 @@ a {
   .section {
     padding: 4rem 7rem; }
   .show-col {
-    flex: 1;
-    flex-basis: 33%; } }
+    flex-basis: 33%;
+    flex-grow: 0;
+    width: 100px; } }
 
 @media screen and (max-width: 768px) {
   main {
