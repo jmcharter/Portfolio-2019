@@ -27,14 +27,12 @@ layout: default
     <h1 class="section-heading">Projects</h1>
     <div class="showcase">
         <div class="show-row">
+            <div class="show-col">
+                <div class="project-img" id="pomodoro-site"></div>
+            </div>
             <div class="show-col"></div>
             <div class="show-col"></div>
-            <!-- <div class="show-col"></div> -->
-            <!-- </div>
-    <div class="show-row"> -->
             <div class="show-col"></div>
-            <div class="show-col"></div>
-            <!-- <div class="show-col"></div> -->
         </div>
     </div>
 </div>
