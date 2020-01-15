@@ -107,20 +107,37 @@
   height: 20vw;
   background-color: #515151;
   cursor: pointer; }
-  .show-col :after {
-    content: " ";
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.3s ease; }
-  .show-col :hover:after {
-    opacity: 0.8; }
 
 .project-img {
+  position: relative;
   width: 100%;
   height: 100%; }
+  .project-img a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .project-img a::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .project-img a:hover:after {
+      opacity: 0.8; }
+    .project-img a h3 {
+      position: absolute;
+      color: #fff;
+      font-weight: bold;
+      font-size: 2rem;
+      opacity: 0;
+      transition: opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .project-img a:hover > h3 {
+      opacity: 1; }
 
 #pomodoro-site {
   background: url("/img/showcase/pomodoro.png");

@@ -28,7 +28,11 @@ layout: default
     <div class="showcase">
         <div class="show-row">
             <div class="show-col">
-                <div class="project-img" id="pomodoro-site"></div>
+                <div class="project-img" id="pomodoro-site">
+                    <a href="http://pomodoro.joncharter.co.uk">
+                        <h3>Pomodoro Timer</h3>
+                    </a>
+                </div>
             </div>
             <div class="show-col"></div>
             <div class="show-col"></div>
