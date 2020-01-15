@@ -10,11 +10,37 @@
 }
 
 .show-col {
-    display: flex;
+    // display: flex;
+    position: relative;
     flex-basis: 100%;
+    height: 20vw;
+    background-color: lighten($primary-colour,5);
+    cursor: pointer;
+    
+    :after {
+        content: " ";
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        position: absolute;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    :hover:after{
+        opacity: 0.8;
+    }
+}
 
-    height: 100px;
-    // padding: 1rem;
-    border: 1px solid black;
-    min-height: 300px;
+.project-img {
+    // border: 3px solid black;
+    width: 100%;
+    height: 100%;
+}
+
+#pomodoro-site {
+    background: url("/img/showcase/pomodoro.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
