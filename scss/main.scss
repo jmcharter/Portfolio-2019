@@ -34,22 +34,6 @@ main{
     position: relative;
     z-index: 0;
 
-    //Social Icons
-    .icons{
-        margin-top: 4rem;
-
-        a {
-            padding: 0.5rem;
-
-            &:hover,&:focus {
-                color: $secondary-colour;
-                @include easing();
-            }
-        }
-
-
-    }
-
     //Set to only move the heading down when the container
     //class is set to .home.
     &.home {
@@ -83,6 +67,25 @@ h1, h2, h3 {
     #highlight {
         color: $secondary-colour;
     }
+
+    .icons{
+        margin-top: 4rem;
+    }
+}
+
+ //Social Icons
+ .icons{
+    margin-top: 1rem;
+    a {
+        padding: 0.5rem;
+
+        &:hover,&:focus {
+            color: $secondary-colour;
+            @include easing();
+        }
+    }
+
+
 }
 
 a {
@@ -138,11 +141,13 @@ a {
     }
 
     .card {
-
+        position: relative;
         background: lighten($color: $primary-colour, $amount: 2);
         padding: 1rem;
         border-top: $secondary-colour 5px solid;
         border-bottom: $secondary-colour 2px solid;
+        border-radius: 0 0 12.5% 12.5%;
+        box-shadow: 3px 6px rgba($color: darken($primary-colour,10), $alpha: 0.7);
 
         &-1{
             grid-area: card1;
@@ -153,10 +158,69 @@ a {
         &-3{
             grid-area: card3;
         }
+
+        h3 {
+            color: $secondary-colour;
+            font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
     }
 }
+
+.tech-icons {
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        padding: 0.75rem 0.75rem;
+
+    
+    }
+}
+
+.divider {
+    position: absolute;
+    background-color: darken($color: $primary-colour, $amount: 5);
+    width: 90%;
+    height: 2px;
+}
+
 .contact {
     background-color: $primary-colour;
+    position: relative;
+
+    .contact-info {
+        min-height: 80vh;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+
+    .email{
+        font-size: 3rem;
+        padding: 2rem;
+
+        a {
+            color: $secondary-colour;
+        }
+    }
+
+    .icons {
+        a{
+            font-size: 2rem;
+        }
+    }
 }
+
 
 @import 'mobile';
