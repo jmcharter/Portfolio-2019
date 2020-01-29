@@ -68,23 +68,23 @@ layout: default
         </div>
         <div class="card card-1">
             <h3>Front End</h3>
-            <span class="divider"></span>
+            <div class="divider"></div>
             <div class="tech-icons">
-                <span class="icon"><i class="fab fa-html5 fa-4x"></i>
+                <div class="icon"><i class="fab fa-html5 fa-4x"></i>
                     <h5>HTML5</h5>
-                </span>
-                <span class="icon"><i class="fab fa-js fa-4x"></i>
+                </div>
+                <div class="icon"><i class="fab fa-js fa-4x"></i>
                     <h5>JavaScript</h5>
-                </span>
-                <span class="icon"><i class="fab fa-sass fa-4x"></i>
+                </div>
+                <div class="icon"><i class="fab fa-sass fa-4x"></i>
                     <h5>SASS</h5>
-                </span>
-                <span class="icon"><i class="fab fa-react fa-4x"></i>
+                </div>
+                <div class="icon"><i class="fab fa-react fa-4x"></i>
                     <h5>React</h5>
-                </span>
-                <span class="icon"><i class="fab fa-bootstrap fa-4x"></i>
+                </div>
+                <div class="icon"><i class="fab fa-bootstrap fa-4x"></i>
                     <h5>Bootstrap</h5>
-                </span>
+                </div>
             </div>
         </div>
         <div class="card card-2">
