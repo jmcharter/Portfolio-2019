@@ -266,6 +266,9 @@ a {
     grid-area: bio; }
   .about .card {
     position: relative;
+    margin: auto;
+    max-width: 400px;
+    min-height: 300px;
     background: #494949;
     padding: 1rem;
     border-top: #ee7722 5px solid;

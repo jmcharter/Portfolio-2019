@@ -142,6 +142,9 @@ a {
 
     .card {
         position: relative;
+        margin: auto;
+        max-width: 400px;
+        min-height: 300px;
         background: lighten($color: $primary-colour, $amount: 2);
         padding: 1rem;
         border-top: $secondary-colour 5px solid;
