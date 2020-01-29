@@ -63,6 +63,8 @@
     .show-col {
         flex-basis: 33.33%;
         flex-grow: 0;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
     }
 }
 
@@ -123,6 +125,8 @@
     .show-col {
         flex-basis: 50%;
         height: 33vw;
+        border-top: 1px solid darken($color: $primary-colour, $amount: 5);
+        border-bottom: 2px solid darken($color: $primary-colour, $amount: 5);
     }
     
 }
@@ -165,4 +169,24 @@
         flex-basis: 100%;
         height: 66vw;
     }
+
+    .contact {
+
+        .contact-info {
+            font-size: 1rem;
+        }
+
+        .email {
+            font-size: 2rem;
+    
+        }
+
+        .icons {
+
+            a{
+                font-size: 1.5rem;
+            }
+        }
+    }
 }
+
