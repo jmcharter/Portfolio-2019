@@ -132,9 +132,9 @@ layout: default
     <h1 class="section-heading">Contact me</h1>
     <div class="contact-info">
         <h3>Want to get in touch?</h3>
-        <h3>
-            <div class="email"><a href="mailto:hello@joncharter.co.uk">Send me an email</a></div>
-        </h3>
+
+        <div class="email"><a href="mailto:hello@joncharter.co.uk">Send me an email</a></div>
+
         <h3>or find me on social media:</h3>
         <div class="icons">
             <a href="https://github.com/jmcharter/">
