@@ -9,7 +9,7 @@
   "author": "Jonathan Charter",
   "license": "ISC",
   "dependencies": {
-    "npm": "^6.13.4",
+    "npm": "^6.14.6",
     "sass": "^1.29.0"
   }
 }
