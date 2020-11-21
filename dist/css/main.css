@@ -172,21 +172,21 @@
 }
 
 #pomodoro-site {
-  background: url("/img/showcase/pomodoro.png");
+  background: url("../img/showcase/pomodoro.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #weather-site {
-  background: url("/img/showcase/weather.png");
+  background: url("../img/showcase/weather.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #rgbgame-site {
-  background: url("/img/showcase/rgbgame.png");
+  background: url("../img/showcase/rgbgame.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
