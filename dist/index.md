@@ -36,7 +36,7 @@ layout: default
             </div>
             <div class="show-col">
                 <div class="project-img" id="pomodoro-site">
-                    <a href="http://pomodoro.joncharter.co.uk">
+                    <a href="pomodoro.html">
                         <h3>Pomodoro Timer</h3>
                     </a>
                 </div>
