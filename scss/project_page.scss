@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600|Roboto:300,700&display=swap');
+@import 'config';
+
+h2 a {
+    color: $secondary-colour;
+}
+
+img {
+    width: 40vw;
+    border: 1px solid black;
+}
