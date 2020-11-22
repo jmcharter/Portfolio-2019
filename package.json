@@ -4,7 +4,8 @@
   "description": "Programming and Web Dev Portfolio Website for Jonathan Charter",
   "main": "index.js",
   "scripts": {
-    "sass": "sass scss/:dist/css/"
+    "sass": "sass scss/:dist/css/",
+    "sass-watch": "sass scss/:dist/css/ --watch"
   },
   "author": "Jonathan Charter",
   "license": "ISC",
