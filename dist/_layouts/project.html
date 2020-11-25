@@ -46,7 +46,25 @@
     </header>
 
     <main>
+        <h1> {{ page.title }} </h1>
+<h2>
+    <a href="http://{{ page.subdomain }}.joncharter.co.uk">View Live Project</a> -
+    <a href="{{ page.github }}">View on Github</a>
+</h2>
+
+<div class="img-holder">
+    <div class="img-topper">
+        <div class="circles">
+            <div class="circle circle-red"></div>
+            <div class="circle circle-green"></div>
+            <div class="circle circle-yellow"></div>
+        </div>
+    </div>
+    <img src="img/showcase/{{ page.screenshot }}.png" alt="Screenshot of the live project"/>
+</div>
+<div class="project-desc" markdown="1">
     {{ content }}
+</div>
     </main>
 <script src="js/project.js"></script>
 </html>
