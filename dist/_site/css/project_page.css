@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,600|Roboto:300,700&display=swap");
 h2 a {
-  color: #ee7722;
   font-variant: small-caps;
+}
+
+a {
+  color: #ee7722;
 }
 
 /*# sourceMappingURL=project_page.css.map */
