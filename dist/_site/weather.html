@@ -63,9 +63,15 @@
     <img src="img/showcase/weather.png" alt="Screenshot of the live project"/>
 </div>
 <div class="project-desc" markdown="1">
-    <p>For this project, I made use of React and two APIs. </p>
+    <p>For this project, I made use of React and two APIs to create an interactive weather application that allows a user to view weather and time for a searched location.</p>
 
-<p>The first API is <a href="https://openweathermap.org/">Open Weather Map</a></p>
+<p>The first API is <a href="https://openweathermap.org/">Open Weather Map</a>. The search box component passes it’s content into the API query, which then returns the data as a JSON object. On hitting the return key, it will then display this data below.</p>
+
+<p>There is also a clock component which get’s the current time and updates the tick every second. This makes use of the momentJS library, to provide local time for the searched location and the date (including day, month, year and week)</p>
+
+<p>The third and final component is for temperature. This component simply queries Open Weather Map for the appropriate weather icon and displays it under the queried temperature.</p>
+
+<p>Another API I’ve made use of is <a href="https://unsplash.com/developers">Unsplash</a>. When a search is made the Unsplash API is queried, using the searched location and the resulting weather condition, to return an appropriate image which is then set to be the background.</p>
 
 
 </div>
