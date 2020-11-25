@@ -225,5 +225,22 @@ a {
     }
 }
 
+code {
+    padding: 0.5em;
+    margin: 1em 0;
+    display: inline-block;
+    max-width: 80vw;
+    overflow: scroll;
+    background-color: darken($color: $primary-colour, $amount: 10);
+}
+
+.project-desc {
+    margin-top: 1em;
+    display: block;
+
+    p {
+        margin-bottom: 1em;
+    }
+}
 
 @import 'mobile';

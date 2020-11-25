@@ -81,12 +81,13 @@
     }
 
     .img-holder {
-        margin-top: 1em;
-        width: 50vw;
+        margin: 1em 1em 1em 0;
+        width: 40vw;
+        display: block;
+        float: left;
     }
 
     .project-desc {
-        margin: 1em 0;
         p {
             text-align: left;
         }

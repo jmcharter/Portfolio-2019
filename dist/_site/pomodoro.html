@@ -48,7 +48,7 @@
     <main>
     <h1 id="pomodoro-timer">Pomodoro Timer</h1>
 
-<h2 id="live-projecthttppomodorojonchartercouk"><a href="http://pomodoro.joncharter.co.uk">Live Project</a></h2>
+<h2 id="view-live-projecthttppomodorojonchartercouk---view-on-githubhttpsgithubcomjmcharterpomodorotimer"><a href="http://pomodoro.joncharter.co.uk">View Live Project</a> - <a href="https://github.com/jmcharter/pomodoro_timer">View on Github</a></h2>
 
 <div class="img-holder">
     <div class="img-topper">
@@ -61,7 +61,15 @@
     <img src="img/showcase/pomodoro.png" alt="Screenshot of the live project" />
 </div>
 <div class="project-desc">
-  <p>In this project I used html and simple vanilla JavaScript to create a “Pomodoro Clock”</p>
+  <p>In this project I used html and simple vanilla JavaScript to create a “Pomodoro Clock”. An initial work and break time are set when the page is loaded, which can be adjusted. Once start is clicked the clock will tick
+down until it reaches zero, and then make an alarm noise to alert the user it’s time for a break. At this point the timer will run for the shorter break duration and then revert back to the longer work duration.</p>
+
+  <p>An interesting challenge during this project was correctly displaying the time in minutes and seconds. The 
+JavaScript code is all in seconds, so it was not completely intuitive. The main issue was with the seconds having a leading zero for single digits. I solved this problem by making use of the ternary operator, as so:</p>
+
+  <pre><code>clockFace.textContent = mins + ":" + (secs &gt; 9 ? secs : '0' + secs);
+</code></pre>
+
 </div>
 
     </main>
