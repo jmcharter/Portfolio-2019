@@ -87,3 +87,51 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.img-holder {
+    margin: 2px 2px;
+    width: 30vw;
+    box-shadow: 0 0 10px 1px hsl(0, 0%, 50%);
+    border-radius: 10px 10px 0% 0;
+    overflow: hidden;
+}
+
+.img-topper {
+    position: relative;
+    height: 3vh;
+    background-color: #333;
+    border-radius: 10px 10px 0% 0;
+}
+
+.circles {
+    position: absolute;
+    top: 40%;
+  }
+  
+.circle {
+margin-left: 1vh;
+height: 1vh;
+width: 1vh;
+float: left;
+border-radius: 100%;
+}
+
+.circle-red {
+background: #CC4444;
+}
+
+.circle-yellow {
+background: #CCCC44;
+}
+
+.circle-green {
+background: #44CC44;
+}
+
+img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    border: 1px solid #333;
+}

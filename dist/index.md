@@ -27,21 +27,24 @@ layout: default
     <h1 class="section-heading">Projects</h1>
     <div class="showcase">
         <div class="show-row">
-            <div class="show-col">
+            <div class="show-col img-holder">
+                <div class="img-topper"></div>
                 <div class="project-img" id="weather-site">
                     <a href="http://weather.joncharter.co.uk">
                         <h3>React Weather App</h3>
                     </a>
                 </div>
             </div>
-            <div class="show-col">
-                <div class="project-img" id="pomodoro-site">
+            <div class="show-col img-holder">
+                <div class="img-topper"></div>
+                <div class="project-img " id="pomodoro-site">
                     <a href="pomodoro.html">
                         <h3>Pomodoro Timer</h3>
                     </a>
                 </div>
             </div>
-            <div class="show-col">
+            <div class="show-col img-holder">
+                <div class="img-topper"></div>
                 <div class="project-img" id="rgbgame-site">
                     <a href="http://rgbgame.joncharter.co.uk">
                         <h3>Javascript Game</h3>

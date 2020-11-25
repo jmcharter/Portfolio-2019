@@ -192,6 +192,54 @@
   background-repeat: no-repeat;
 }
 
+.img-holder {
+  margin: 2px 2px;
+  width: 30vw;
+  box-shadow: 0 0 10px 1px gray;
+  border-radius: 10px 10px 0% 0;
+  overflow: hidden;
+}
+
+.img-topper {
+  position: relative;
+  height: 3vh;
+  background-color: #333;
+  border-radius: 10px 10px 0% 0;
+}
+
+.circles {
+  position: absolute;
+  top: 40%;
+}
+
+.circle {
+  margin-left: 1vh;
+  height: 1vh;
+  width: 1vh;
+  float: left;
+  border-radius: 100%;
+}
+
+.circle-red {
+  background: #CC4444;
+}
+
+.circle-yellow {
+  background: #CCCC44;
+}
+
+.circle-green {
+  background: #44CC44;
+}
+
+img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  border: 1px solid #333;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -441,11 +489,32 @@ a {
     padding: 4rem 7rem;
   }
 
+  .show-row {
+    justify-content: center;
+  }
+
   .show-col {
-    flex-basis: 33.33%;
+    margin: 0 1px;
+    flex-basis: 30%;
     flex-grow: 0;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
+  }
+
+  .img-holder {
+    margin: 2px 0.5em;
+  }
+
+  .img-holder {
+    margin-top: 1em;
+    width: 50vw;
+  }
+
+  .project-desc {
+    margin: 1em 0;
+  }
+  .project-desc p {
+    text-align: left;
   }
 }
 @media screen and (max-width: 768px) {
@@ -492,10 +561,22 @@ div .menu .brand {
   }
 
   .show-col {
-    flex-basis: 50%;
+    flex-basis: 48%;
     height: 33vw;
     border-top: 1px solid #373737;
     border-bottom: 2px solid #373737;
+  }
+
+  .img-holder {
+    margin: auto;
+    width: 80vw;
+  }
+
+  .project-desc {
+    margin: 1em 0;
+  }
+  .project-desc p {
+    text-align: left;
   }
 }
 @media screen and (max-width: 500px) {
@@ -534,6 +615,18 @@ div .menu .brand {
   }
   .contact .icons a {
     font-size: 1.5rem;
+  }
+
+  .img-holder {
+    margin: auto;
+    width: 80vw;
+  }
+
+  .project-desc {
+    margin: 1em 0;
+  }
+  .project-desc p {
+    text-align: left;
   }
 }
 
