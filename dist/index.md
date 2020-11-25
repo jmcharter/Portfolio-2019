@@ -30,7 +30,7 @@ layout: default
             <div class="show-col img-holder">
                 <div class="img-topper"></div>
                 <div class="project-img" id="weather-site">
-                    <a href="http://weather.joncharter.co.uk">
+                    <a href="weather.html">
                         <h3>React Weather App</h3>
                     </a>
                 </div>
