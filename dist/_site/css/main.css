@@ -484,6 +484,9 @@ a {
   .about .about-info {
     margin: 5vh;
   }
+  .about .about-info .card {
+    min-height: 350px;
+  }
 
   .section {
     padding: 4rem 7rem;
@@ -555,6 +558,9 @@ div .menu .brand {
     grid-template-areas: "bio-pic" "bio" "card1" "card2" "card3";
     grid-template-columns: 1fr;
   }
+  .about .about-info .card {
+    width: 400px;
+  }
 
   .section {
     padding: 1rem;
@@ -618,7 +624,7 @@ div .menu .brand {
   }
 
   .img-holder {
-    margin: auto;
+    margin: 1em auto;
     width: 80vw;
   }
 

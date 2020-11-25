@@ -53,6 +53,10 @@
     .about {
         .about-info{
             margin: 5vh;
+
+            .card {
+                min-height: 350px;
+            }
         }
     }
 
@@ -137,6 +141,10 @@
                 "card3";
 
             grid-template-columns: 1fr;
+
+            .card {
+                width: 400px;
+            }
     }
 
     .section {
@@ -191,6 +199,8 @@
                 "card3";
 
             grid-template-columns: 1fr;
+
+
         }
     }
 
@@ -223,7 +233,7 @@
     }
 
     .img-holder {
-        margin: auto;
+        margin: 1em auto;
         width: 80vw;
     }
 
