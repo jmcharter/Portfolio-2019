@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jonathan Charter</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/project_page.css">
+    <script src="https://kit.fontawesome.com/c0eb13b714.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+            <div class="menu-text">
+                <h3>Menu</h3>
+            </div>
+            <div class="menu-btn">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+            <nav class="menu">
+                <div class="brand">
+                    <div class="photo"></div>
+                </div>
+                <ul class="menu-nav">
+                    <li class="nav-item">
+                        <a href="index.html#home" class="nav-link" id="home-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#projects" class="nav-link" id="projects-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link" id="about-link">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#contact" class="nav-link" id="contact-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+    <h1 id="react-weather-app">React Weather App</h1>
+
+<h2 id="view-live-projecthttpweatherjonchartercouk---view-on-githubhttpsgithubcomjmcharterreactweather"><a href="http://weather.joncharter.co.uk">View Live Project</a> - <a href="https://github.com/jmcharter/ReactWeather">View on Github</a></h2>
+
+<div class="img-holder">
+    <div class="img-topper">
+        <div class="circles">
+            <div class="circle circle-red"></div>
+            <div class="circle circle-green"></div>
+            <div class="circle circle-yellow"></div>
+        </div>
+    </div>
+    <img src="img/showcase/weather.png" alt="Screenshot of the live project" />
+</div>
+<div class="project-desc">
+  <p>In this project I used html and simple vanilla JavaScript to create a “Pomodoro Clock”. An initial work and break time are set when the page is loaded, which can be adjusted. Once start is clicked the clock will tick
+down until it reaches zero, and then make an alarm noise to alert the user it’s time for a break. At this point the timer will run for the shorter break duration and then revert back to the longer work duration.</p>
+
+  <p>An interesting challenge during this project was correctly displaying the time in minutes and seconds. The 
+JavaScript code is all in seconds, so it was not completely intuitive. The main issue was with the seconds having a leading zero for single digits. I solved this problem by making use of the ternary operator, as so:</p>
+
+  <pre><code>clockFace.textContent = mins + ":" + (secs &gt; 9 ? secs : '0' + secs);
+</code></pre>
+
+</div>
+
+    </main>
+<script src="js/main.js"></script>
+</html>
