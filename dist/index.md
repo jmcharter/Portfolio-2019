@@ -28,7 +28,13 @@ layout: default
     <div class="showcase">
         <div class="show-row">
             <div class="show-col img-holder">
-                <div class="img-topper"></div>
+                <div class="img-topper">
+                    <div class="circles">
+                        <div class="circle circle-red"></div>
+                        <div class="circle circle-yellow"></div>
+                        <div class="circle circle-green"></div>
+                    </div>
+                </div>
                 <div class="project-img" id="weather-site">
                     <a href="weather.html">
                         <h3>React Weather App</h3>
@@ -36,7 +42,13 @@ layout: default
                 </div>
             </div>
             <div class="show-col img-holder">
-                <div class="img-topper"></div>
+                <div class="img-topper">
+                    <div class="circles">
+                        <div class="circle circle-red"></div>
+                        <div class="circle circle-yellow"></div>
+                        <div class="circle circle-green"></div>
+                    </div>
+                </div>
                 <div class="project-img " id="pomodoro-site">
                     <a href="pomodoro.html">
                         <h3>Pomodoro Timer</h3>
@@ -44,7 +56,13 @@ layout: default
                 </div>
             </div>
             <div class="show-col img-holder">
-                <div class="img-topper"></div>
+                <div class="img-topper">
+                    <div class="circles">
+                        <div class="circle circle-red"></div>
+                        <div class="circle circle-yellow"></div>
+                        <div class="circle circle-green"></div>
+                    </div>
+                </div>
                 <div class="project-img" id="rgbgame-site">
                     <a href="http://rgbgame.joncharter.co.uk">
                         <h3>Javascript Game</h3>
