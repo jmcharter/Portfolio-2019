@@ -2,7 +2,7 @@
 title:  Hex Colour Guessing Gaming
 layout: project
 subdomain: rgbgame
-screenshot: colour_game
+screenshot: hexgame
 github: https://github.com/jmcharter/rgbGuessingGame
 ---
 
