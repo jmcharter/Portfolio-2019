@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jonathan Charter</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/project_page.css">
+    <script src="https://kit.fontawesome.com/c0eb13b714.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+            <div class="menu-text">
+                <h3>Menu</h3>
+            </div>
+            <div class="menu-btn">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+            <nav class="menu">
+                <div class="brand">
+                    <div class="photo"></div>
+                </div>
+                <ul class="menu-nav">
+                    <li class="nav-item">
+                        <a href="index.html#home" class="nav-link" id="home-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#projects" class="nav-link" id="projects-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link" id="about-link">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#contact" class="nav-link" id="contact-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <h1> Hex Colour Guessing Gaming </h1>
+<h2>
+    <a href="http://rgbgame.joncharter.co.uk">View Live Project</a> -
+    <a href="https://github.com/jmcharter/rgbGuessingGame">View on Github</a>
+</h2>
+
+<div class="img-holder">
+    <div class="img-topper">
+        <div class="circles">
+            <div class="circle circle-red"></div>
+            <div class="circle circle-green"></div>
+            <div class="circle circle-yellow"></div>
+        </div>
+    </div>
+    <img src="img/showcase/colour_game.png" alt="Screenshot of the live project"/>
+</div>
+<div class="project-desc" markdown="1">
+    <p>This is an update of a project I completed years ago. At the time I followed a tutorial from Colt Steele, but this updated version has been made from scratch. I’ve made sure to keep all of the original functionality, but using more modern ES6 paradigms, such as the use of <code>let</code> and <code>const</code> over <code>var</code>, and the use of arrow functions.</p>
+
+<p>The game itself is simple. I made use only of vanilla JavaScript to generate random hex colours and change the background colour of the divs to match them. One of these is then assigned as the “chosen colour”. You can guess which squared matches the displayed chosen colour, and if successful the game will finish and all squares (and the head background) will change to match that colour.</p>
+
+<p>I’ve implemented two modes, easy and hard mode, as well as the ability to regenerate the colours or reset mid game.</p>
+
+</div>
+    </main>
+<script src="js/project.js"></script>
+</html>

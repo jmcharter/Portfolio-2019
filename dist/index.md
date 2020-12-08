@@ -64,8 +64,8 @@ layout: default
                     </div>
                 </div>
                 <div class="project-img" id="rgbgame-site">
-                    <a href="http://rgbgame.joncharter.co.uk">
-                        <h3>Javascript Game</h3>
+                    <a href="colour_game.html">
+                        <h3>Hex Colour Guessing Game</h3>
                     </a>
                 </div>
             </div>
