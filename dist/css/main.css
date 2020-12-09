@@ -440,7 +440,12 @@ a {
 }
 
 code {
-  padding: 0.25rem;
+  font-family: monospace;
+  padding: 0 0.1rem;
+  margin: 0 0.1rem;
+  white-space: nowrap;
+  word-break: normal;
+  border: 1px solid #666;
   max-width: 80vw;
   overflow: scroll;
   background-color: #2b2b2b;
