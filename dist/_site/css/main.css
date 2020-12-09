@@ -573,12 +573,12 @@ div .menu .brand {
   }
 
   .about .about-info {
-    padding: 2rem;
+    padding: 0.5rem;
     grid-template-areas: "bio-pic" "bio" "card1" "card2" "card3";
     grid-template-columns: 1fr;
   }
   .about .about-info .card {
-    width: 400px;
+    width: 350px;
   }
 
   .section {
