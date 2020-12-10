@@ -440,7 +440,7 @@ a {
 }
 
 code {
-  display: block;
+  display: inline-block;
   font-family: monospace;
   padding: 0 0.1rem;
   margin: 0 0.1rem;
